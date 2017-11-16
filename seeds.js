@@ -2,6 +2,7 @@ var mongoose = require("mongoose");
 var Campground = require("./models/campground");
 var Comment = require("./models/comment");
 
+//TODO: update data with prices
 var data =[
     {
         name: "Tundra Tuna Tent",
