@@ -1,0 +1,22 @@
+<% include ../partials/header %>
+
+<div class="row">
+    <h1 style="text-align:center;">Add New Campground</h1>
+    
+    <div style="width: 30%; margin: 50px auto;">
+        <form action="/campgrounds" method="POST">
+                <!--.form-control is the bootstrap comp that makes it look nice-->
+                <!--.form-group makes gives each component some spacing-->
+                <input class="form-control form-group" type="text" name="name" placeholder="Name"></input>
+                <input class="form-control form-group" type="number" name="Price" placeholder="Price" min="0.00" step="0.01"></input>
+                <input class="form-control form-group" type="text" name="image" placeholder="Image URL"></input>
+                <input class="form-control form-group" type="text" name="description" placeholder="Description"></input>
+                <div class="form-group">
+                    <button class=" form-group btn btn-primary btn-lg btn-block">Submit</button>
+                </div>
+        </form>
+        <a href="/campgrounds">Back</a>
+    </div>
+</div>
+
+<% include ../partials/footer %>
