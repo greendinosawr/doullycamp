@@ -5,6 +5,8 @@ var Campground  = require("../models/campground"),
     Comment     = require("../models/comment"),
     middleware  = require("../middleware/"); //when you point to directory and not a file, it'll automatically go to index.js
 
+//NOTE: beginning of url is provided from app.js in [ app.use("/campgrounds/:id/comments", commentsRoutes) ]
+
 //CREATE FORM
 router.get("/new", middleware.isLoggedIn, function(req, res) {
     Campground.findById(req.params.id, function(error, foundCampground) {

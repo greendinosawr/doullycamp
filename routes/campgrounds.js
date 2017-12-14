@@ -4,6 +4,8 @@ var router = express.Router();
 var Campground = require("../models/campground"),
     middleware = require("../middleware/"); //when you point to directory and not a file, it'll automatically go to index.js
 
+//NOTE: beginning of url is provided from app.js in [ app.use("/campgrounds", campgroundRoutes) ]
+
 //INDEX
 router.get("/", function(req, res) {
     Campground.find({}, function(error, allCampgrounds) {
