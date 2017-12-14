@@ -32,7 +32,7 @@ body {
   top: 0;
   left: 0;
   background-size: cover;
-  background-position: center; /*50% 50%; /* or center */
+  background-position: 50% 50%; /* or center */
   background-repeat: no-repeat;
   opacity: 0;
   z-index: 0;
